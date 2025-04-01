@@ -20,5 +20,11 @@ Users.jsx receives data and updates the UI.
  - npm install mongoose in root, create a mongodb cluster, mongoose for smooth interation btw nodejs and mongodb, set up a .env and include it in gitignore, .env for URI.
  -npm i dontenv for a zero-dependency module to load environment variables from a .env file into process.env. 
  - we connect our backend with database
-  
+
+7. Create User Model
+ -Import Mongoose: Load the Mongoose ODM library to interface with MongoDB.
+ -Define Schema: Specify the structure and validation rules for user data (e.g., username, email, password with types and constraints).
+ -Enable Timestamps: Automatically manage createdAt and updatedAt fields for each document.
+ -Create Model: Compile schema into a model to interact with MongoDB (perform CRUD operations).
+ -Export Model: Make the model accessible across the app for database interaction. 
 
