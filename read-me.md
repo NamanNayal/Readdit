@@ -28,3 +28,10 @@ Users.jsx receives data and updates the UI.
  -Create Model: Compile schema into a model to interact with MongoDB (perform CRUD operations).
  -Export Model: Make the model accessible across the app for database interaction. 
 
+8. create test api
+ -Client requests GET /api/user/test.
+ -Express routes it to user.route.js, which matches /test.
+ -Controller handles the request, sending { message: "API is working!" }.
+
+ -Best Practice - handle routes in seperate folder, and logic in seperate folder, while index.js keeps server configuration separate from business logic.
+
